@@ -28,7 +28,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>MarkersRuby</string>
+	<string>Markers</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
@@ -51,9 +51,9 @@
 		<key>positionOfDivider</key>
 		<real>528</real>
 		<key>savedFrame</key>
-		<string>104 82 1582 902 0 0 1920 1058 </string>
+		<string>110 132 1582 902 0 0 1920 1058 </string>
 		<key>selectedTabView</key>
-		<string>event log</string>
+		<string>result</string>
 	</dict>
 </dict>
 </plist>
