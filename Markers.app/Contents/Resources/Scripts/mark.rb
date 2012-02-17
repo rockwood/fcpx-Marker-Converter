@@ -7,8 +7,7 @@ if !ARGV[0] || !File.exists?(ARGV[0])
   exit 1
 end
 
-file = File.new( ARGV[0] )
-doc = Document.new file
+doc = (Document.new File.new ARGV[0] ).root
 
 def parse(duration)
   duration = duration.to_s.sub( "s", "" )
@@ -16,9 +15,9 @@ def parse(duration)
   return duration[0].to_f / duration[1].to_f
 end
 
-framerate = parse(doc.root.elements["project/resources/format"].attribute("frameDuration"))
+framerate = parse(doc.elements["project/resources/format"].attribute("frameDuration"))
 
-doc.root.elements.each("project/sequence/spine/clip/marker") { |marker| 
+doc.elements.to_a("//marker").each_with_index do |marker, i| 
   
   total = parse marker.attribute("start")
   
@@ -28,5 +27,5 @@ doc.root.elements.each("project/sequence/spine/clip/marker") { |marker|
   timecode.push '%02d' % (total % 60).floor
   timecode.push '%02d' % (total % 1 / framerate).floor
 
-  puts  "#{timecode.join(":")} #{marker.attribute('value')}"
-}
+  puts  timecode.join(":") + " " + marker.attribute('value').to_s
+end
