@@ -2,6 +2,14 @@
 
 FCPX currently doesn't export markers to Compressor... super lame! This app converts markers from a .fcpxml file to a .txt file that can be imported into compressor.
 
+## Known issues
+
+In order for this to work, you need need to have your entire project in a single compound clip. ie:  Select All => "New Compound Clip". 
+
+Create your makers on the global compound clip. 
+
+I'm currently working to fix this issue.
+
 ## Usage
 
 ### Export project xml file
