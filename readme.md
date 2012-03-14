@@ -4,11 +4,7 @@ FCPX currently doesn't export markers to Compressor... super lame! This app conv
 
 ## Known issues
 
-In order for this to work, you need need to have your entire project in a single compound clip. ie:  Select All => "New Compound Clip". 
-
-Create your makers on the global compound clip. 
-
-I'm currently working to fix this issue.
+Due to an issue with the way FCPX deals with unused clips, It's recommended that you create your markers as the final step in your workflow. Not doing so can result in markers being duplicated.
 
 ## Usage
 
