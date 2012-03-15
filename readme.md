@@ -17,6 +17,10 @@ Option 1 - Open Markers.app. Select your .fcpxml file. Save your markers text fi
 
 Option 2 - Drag your .fcpxml file onto the Markers.app icon. You'll be asked where to save the markers text file.
 
+### Compressor Error Calibration
+
+Some users experience a slight timing error when importing markers into compressor - especially when converting very long projects. If your markers are slightly off, select "Yes" to the dialog.
+
 ### Import into Compressor
 In the Compressor preview window, click the marker button and select "Import Chapter Marker List". Select your markers text file, and BOOM! Markers imported. 
 
