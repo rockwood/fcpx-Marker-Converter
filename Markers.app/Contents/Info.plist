@@ -51,7 +51,7 @@
 		<key>positionOfDivider</key>
 		<real>760</real>
 		<key>savedFrame</key>
-		<string>291 -990 1470 990 125 -1050 1680 1050 </string>
+		<string>0 60 1680 968 0 0 1680 1028 </string>
 		<key>selectedTabView</key>
 		<string>event log</string>
 	</dict>
