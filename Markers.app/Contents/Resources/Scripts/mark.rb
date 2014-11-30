@@ -29,10 +29,10 @@ def calulateOffset(element)
 end
 
 # get the framerate in milliseconds
-framerate = parseTime(doc.elements["project/resources/format"].attribute("frameDuration"))
+framerate = parseTime(doc.elements["resources/format"].attribute("frameDuration"))
 
 # loop through all "marker" elements
-doc.elements.to_a("//marker").each_with_index do |marker, i| 
+doc.elements.to_a("//marker").each_with_index do |marker, i|
   uncompensatedTotal = parseTime(marker.attribute("start")) - calulateOffset(marker.parent)
   total = uncompensatedTotal - ( uncompensatedTotal * COMPRESSOR_ERROR )
   timecode = []
